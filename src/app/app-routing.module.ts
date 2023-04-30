@@ -6,6 +6,8 @@ import { BackendLayoutComponent } from './layouts/backend-layout/backend-layout.
 import { DashboardComponent } from './pages/backend/dashboard/dashboard.component';
 import { LoginRegisterComponent } from './pages/login-register/login-register.component';
 import { LoginRegisterLayoutComponent } from './layouts/login-register-layout/login-register-layout.component';
+import { AboutComponent } from './pages/frontend/about/about.component';
+import { ContactComponent } from './pages/frontend/contact/contact.component';
 
 const routes: Routes = [
   {
@@ -16,6 +18,21 @@ const routes: Routes = [
         path: "",
         component: HomeComponent,
         pathMatch: "full"
+      },
+      //About Contact
+      {
+        path: "about",
+        component: AboutComponent
+      },
+      {
+        path:"contact",
+        component: ContactComponent
+      },
+
+      //Login/Register
+      {
+        path: "login-register",
+        component: LoginRegisterComponent
       }
     ]
   },
